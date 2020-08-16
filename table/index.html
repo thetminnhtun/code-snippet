@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+
+        <title>Table</title>
+        <style>
+            .card-title {
+                float: left;
+                font-size: 1.1rem;
+                font-weight: 400;
+                margin: 0;
+            }
+            .table.table-head-fixed thead tr:nth-child(1) th {
+                background-color: #fff;
+                border-bottom: 0;
+                box-shadow: inset 0 1px 0 #dee2e6, inset 0 -1px 0 #dee2e6;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+            }
+            .table.table-head-fixed > thead > tr > td,
+            .table.table-head-fixed > thead > tr > th {
+                border-top-width: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="mb-3">
+                        Fixed Header Table
+                    </h3>
+                </div>
+                <div class="col-12">
+                    <div class="table-responsive p-0" style="height: 300px;">
+                        <table class="table table-head-fixed text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>User</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Reason</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>183</td>
+                                    <td>John Doe</td>
+                                    <td>11-7-2014</td>
+                                    <td>
+                                        <span class="tag tag-success"
+                                            >Approved</span
+                                        >
+                                    </td>
+                                    <td>
+                                        Bacon ipsum dolor sit amet salami
+                                        venison chicken flank fatback doner.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>219</td>
+                                    <td>Alexander Pierce</td>
+                                    <td>11-7-2014</td>
+                                    <td>
+                                        <span class="tag tag-warning"
+                                            >Pending</span
+                                        >
+                                    </td>
+                                    <td>
+                                        Bacon ipsum dolor sit amet salami
+                                        venison chicken flank fatback doner.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>657</td>
+                                    <td>Bob Doe</td>
+                                    <td>11-7-2014</td>
+                                    <td>
+                                        <span class="tag tag-primary"
+                                            >Approved</span
+                                        >
+                                    </td>
+                                    <td>
+                                        Bacon ipsum dolor sit amet salami
+                                        venison chicken flank fatback doner.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>Mike Doe</td>
+                                    <td>11-7-2014</td>
+                                    <td>
+                                        <span class="tag tag-danger"
+                                            >Denied</span
+                                        >
+                                    </td>
+                                    <td>
+                                        Bacon ipsum dolor sit amet salami
+                                        venison chicken flank fatback doner.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>134</td>
+                                    <td>Jim Doe</td>
+                                    <td>11-7-2014</td>
+                                    <td>
+                                        <span class="tag tag-success"
+                                            >Approved</span
+                                        >
+                                    </td>
+                                    <td>
+                                        Bacon ipsum dolor sit amet salami
+                                        venison chicken flank fatback doner.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>494</td>
+                                    <td>Victoria Doe</td>
+                                    <td>11-7-2014</td>
+                                    <td>
+                                        <span class="tag tag-warning"
+                                            >Pending</span
+                                        >
+                                    </td>
+                                    <td>
+                                        Bacon ipsum dolor sit amet salami
+                                        venison chicken flank fatback doner.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>832</td>
+                                    <td>Michael Doe</td>
+                                    <td>11-7-2014</td>
+                                    <td>
+                                        <span class="tag tag-primary"
+                                            >Approved</span
+                                        >
+                                    </td>
+                                    <td>
+                                        Bacon ipsum dolor sit amet salami
+                                        venison chicken flank fatback doner.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>982</td>
+                                    <td>Rocky Doe</td>
+                                    <td>11-7-2014</td>
+                                    <td>
+                                        <span class="tag tag-danger"
+                                            >Denied</span
+                                        >
+                                    </td>
+                                    <td>
+                                        Bacon ipsum dolor sit amet salami
+                                        venison chicken flank fatback doner.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
