@@ -12,7 +12,7 @@
 
 | Name  | Live Demo  | Code Sample  |
 |---|---|---|
-| Fixed Header Table  |[Live Demo](https://thetminnhtun.github.io/code-snippet/css/table/)   |[Code Sample](https://github.com/thetminnhtun/code-snippet/blob/master/css/shape-with-text-inside)   |
+| Fixed Header Table  |[Live Demo](https://thetminnhtun.github.io/code-snippet/css/table/)   |[Code Sample](https://github.com/thetminnhtun/code-snippet/tree/master/css/table)   |
 
 ## JavaScript
 
