@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+
+        <title>Vue.js | Sorting</title>
+    </head>
+    <body>
+        <div id="root">
+            <div class="continer mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <h3>Vue.js Sorting</h3>
+                        <hr />
+                        <button
+                            @click="up"
+                            :disabled="sort == 0"
+                            class="btn btn-outline-success btn-sm"
+                        >
+                            <i class="fas fa-arrow-up"></i>
+                            Up
+                        </button>
+                        <button
+                            @click="down"
+                            :disabled="products.length - 1 == sort"
+                            class="btn btn-outline-success btn-sm"
+                        >
+                            <i class="fas fa-arrow-down"></i>
+                            Down
+                        </button>
+                        <ul
+                            v-for="(product, index) in products"
+                            class="list-group mt-3"
+                        >
+                            <li
+                                class="list-group-item list-group-item-action"
+                                @click="sort = product.sort"
+                            >
+                                <input
+                                    type="radio"
+                                    v-model="sort"
+                                    :value="product.sort"
+                                />
+                                {{ product.name }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- development version, includes helpful console warnings -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <script>
+            new Vue({
+                el: "#root",
+                data: {
+                    show: false,
+                    sort: 0,
+                    products: [
+                        { name: "Book", sort: 0 },
+                        { name: "Pencil", sort: 1 },
+                        { name: "Pen", sort: 2 },
+                        { name: "Bug", sort: 3 },
+                    ],
+                },
+                methods: {
+                    up() {
+                        this.products[this.sort].sort = this.sort - 1
+                        this.products[this.sort - 1].sort = this.sort
+                        this.sortProducts()
+                        this.sort--
+                    },
+                    down() {
+                        this.products[this.sort].sort = this.sort + 1
+                        this.products[this.sort + 1].sort = this.sort
+                        this.sortProducts()
+                        this.sort++
+                    },
+                    sortProducts() {
+                        this.products.sort((a, b) => a.sort - b.sort)
+                    },
+                },
+            })
+        </script>
+    </body>
+</html>
