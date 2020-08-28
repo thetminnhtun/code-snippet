@@ -18,3 +18,10 @@
 
 [swipe](https://thetminnhtun.github.io/code-snippet/js/swipe/index.html)
 [Ajax](https://thetminnhtun.github.io/code-snippet/js/ajax)
+
+
+### Table
+
+| Name  | Live Demo  | Code Sample  |
+|---|---|---|
+| Sorting Button  |[Live Demo](https://thetminnhtun.github.io/code-snippet/vue/sort-button)   |[Code Sample](https://github.com/thetminnhtun/code-snippet/tree/master/vue/sort-button)   |
