@@ -19,6 +19,12 @@
 [swipe](https://thetminnhtun.github.io/code-snippet/js/swipe/index.html)
 [Ajax](https://thetminnhtun.github.io/code-snippet/js/ajax)
 
+
+| Name  | Live Demo  | Code Sample  |
+|---|---|---|
+| Load more content on click button  |[Live Demo](https://thetminnhtun.github.io/code-snippet/js/loadmore-content-on-click/)   |[Code Sample](https://github.com/thetminnhtun/code-snippet/blob/master/js/loadmore-content-on-click/index.html)   |
+
+
 ## Vue
 
 ### Sorting Button
